@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/business_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_place"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/business_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Business Name"
+                android:textColor="@color/colorDarkGrey"/>
+            <TextView
+                android:id="@+id/business_industry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sector, industry, sub-industry"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/colorMuted"/>
+            <TextView
+                android:id="@+id/placeDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Distance"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/colorMuted"/>
+            <include
+                layout="@layout/rating"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+
+
+
+
+</LinearLayout>
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/action_buttons_container"
+        layout="@layout/listing_action_buttons"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <include
+        android:id="@+id/place_details_container"
+        layout="@layout/place_details"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/place_visit_container"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_view_bg_orange"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin_small"
+        android:paddingRight="@dimen/activity_horizontal_margin_small"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin_small"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/place_service_container"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_view_bg_purple"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin_small"
+        android:orientation="vertical"/>
+
+</LinearLayout>

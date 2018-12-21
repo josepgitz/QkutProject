@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:fadingEdge="horizontal"
+    android:padding="@dimen/google_1x"
+    android:layout_height="wrap_content">
+<LinearLayout
+
+    android:id="@+id/schedule_place_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/service_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Service Name"
+                android:textSize="12dp"
+                android:textColor="@color/colorGrey"/>
+            <TextView
+                android:id="@+id/service_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Department"
+                android:textColor="@color/colorGrey"/>
+
+            <TextView
+                android:id="@+id/service_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Address"
+                android:textColor="@color/colorGrey"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/timeLabel"
+                android:text="Time: "
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                />
+
+            <TextView
+                android:id="@+id/time"
+                android:inputType="phone"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/button_focused"
+                android:singleLine="true" />
+
+
+
+        </LinearLayout>
+            <TextView
+                android:id="@+id/ticketNo"
+                android:inputType="phone"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/button_focused"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/button_queued_info"
+                android:text="More.."
+                android:layout_height="wrap_content"
+                android:fadingEdge="horizontal"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:drawableLeft="@android:drawable/btn_radio"
+                android:textSize="10dp"
+                android:layout_gravity="end"
+                android:layout_width="match_parent" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/activity_horizontal_margin_small"
+        android:paddingEnd="@dimen/activity_horizontal_margin_small"
+        android:background="@drawable/ic_bg_transparent_300x300">
+
+        <TextView
+            android:id="@+id/my_service_queue_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:text="Queue size: 0"
+            android:drawableLeft="@drawable/ic_people_black_24dp"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:id="@+id/my_service_queue_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Queue speed: 0/hr"
+            android:drawableLeft="@drawable/ic_av_timer_black_24dp"
+            android:textSize="14dp"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/scheduled_place_visit_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_view_bg_orange"
+        android:visibility="gone"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin_small"
+        android:paddingRight="@dimen/activity_horizontal_margin_small"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin_small"
+        android:orientation="vertical"/>
+        <LinearLayout
+            android:id="@+id/scheduled_place_service_container"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_view_bg_purple"
+            android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin_small"
+            android:orientation="vertical"/>
+    <LinearLayout
+        android:id="@+id/confirm_queue_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/container_progress_indicator"
+        android:visibility="gone"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10"
+                android:orientation="horizontal">
+                <include android:id="@+id/progressDialogs"
+                    layout="@layout/progress_indicator"
+                    android:visibility="gone"
+                    ></include>
+                <TextView
+                    android:id="@+id/queue_status_statement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You have queued for :"
+                    android:layout_weight="2"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12dp"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/confirm_service_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Service Name"
+                android:layout_weight="3"
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:id="@+id/confirm_service_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department"
+                android:textColor="@color/colorGrey"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:id="@+id/confirm_company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company Name"
+                android:textColor="@color/colorGrey"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:id="@+id/confirm_company_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/colorGrey"
+                android:textSize="12dp"
+                />
+
+                 <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/ic_bg_transparent_300x300"
+                android:orientation="horizontal">
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="12">
+
+                    <TextView
+                    android:id="@+id/DatePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Date"
+                    android:textColor="@color/button_focused"
+                    android:textSize="14dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/activity_horizontal_margin_small"
+                android:paddingEnd="@dimen/activity_horizontal_margin_small"
+                android:background="@drawable/ic_bg_transparent_300x300">
+
+                <Button
+                    android:id="@+id/button_cancel_queue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:padding="@dimen/activity_vertical_margin_small"
+                    android:background="@color/colorPrimary"
+                    android:text="CANCEL"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/button_swap1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:padding="@dimen/activity_vertical_margin_small"
+                    android:background="@color/colorAccent"
+                    android:text="SWAP"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+                  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/ic_bg_transparent_300x300"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/activity_horizontal_margin_small"
+            android:paddingStart="@dimen/activity_horizontal_margin_small"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/service_queue_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_people_black_24dp"
+                android:text="Queue size: 0"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp" />
+                      <TextView
+                          android:id="@+id/TimePicker"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:inputType="phone"
+                          android:maxLines="1"
+                          android:singleLine="true"
+                          android:text="Time"
+                          android:textColor="@color/button_focused"
+                          android:textSize="12dp"
+                          android:visibility="gone" />
+                        <TextView
+                        android:id="@+id/service_queue_speed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_av_timer_black_24dp"
+                        android:text="Queue speed: 0"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="12dp"
+                            />
+        </LinearLayout>
+    </LinearLayout>
+    <include
+        layout="@layout/activity_swap"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent" />
+</LinearLayout>
+</android.support.v7.widget.CardView>

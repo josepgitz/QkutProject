@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/sub_include"
+        layout="@layout/sub_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/container_progress_indicator"
+        layout="@layout/progress_indicator"
+        android:visibility="gone"
+        android:layout_marginVertical="@dimen/activity_vertical_margin_small"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sub_include"/>
+
+    <LinearLayout
+        android:id="@+id/confirm_queue_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/container_progress_indicator"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/queue_status_statement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You queued here for:"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/confirm_service_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Service Name"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/confirm_service_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/colorGrey"/>
+
+            <TextView
+                android:id="@+id/confirm_company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company Name"
+                android:textColor="@color/colorGrey"/>
+
+            <TextView
+                android:id="@+id/confirm_company_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/colorGrey"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/ic_bg_transparent_300x300">
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin_small"
+                    android:background="@drawable/ic_bg_transparent_300x300">
+                    >
+
+                    <TextView
+                        android:id="@+id/DatePickerLabel"
+                        android:inputType="phone"
+                        android:textSize="@dimen/input_text_size"
+                        android:maxLines="1"
+                        android:text="On"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorDanger"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:singleLine="true" />
+                    <TextView
+                        android:id="@+id/DatePicker"
+                        android:inputType="phone"
+                        android:text="Date"
+                        android:textSize="@dimen/input_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textColor="@color/button_focused"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_bg_transparent_300x300">
+                    >
+                    <TextView
+                        android:id="@+id/TimePickerLabel"
+                        android:inputType="phone"
+                        android:text="At:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/input_text_size"
+                        android:textColorHint="@color/colorDanger"
+                        android:maxLines="1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:singleLine="true" />
+                    <TextView
+                        android:id="@+id/TimePicker"
+                        android:inputType="phone"
+                        android:text="Time"
+                        android:textSize="@dimen/input_text_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textColor="@color/button_focused"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:paddingStart="@dimen/activity_horizontal_margin_small"
+            android:paddingEnd="@dimen/activity_horizontal_margin_small"
+            android:background="@drawable/ic_bg_transparent_300x300">
+
+            <TextView
+                android:id="@+id/service_queue_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Queue size: 0"
+                android:drawableLeft="@drawable/ic_people_black_24dp"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/service_queue_speed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Queue speed: 0"
+                android:drawableLeft="@drawable/ic_av_timer_black_24dp"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

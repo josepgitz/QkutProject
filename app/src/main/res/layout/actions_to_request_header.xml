@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:minHeight="200dp"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            style="?attr/checkboxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/approveAll"
+            android:layout_gravity="start"
+            android:layout_margin="5dp"
+            android:text="All" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="8"
+                android:layout_gravity="center"
+                android:id="@+id/rangeLinearLayout"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="From:"
+                    android:padding="5dp"
+
+                    android:layout_centerVertical="true"
+
+                    android:id="@+id/startTextView"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_toEndOf="@id/startTextView"
+                    android:padding="5dp"
+                    android:inputType="number"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start"
+                    android:minWidth="50dp"
+                    android:ellipsize="end"
+
+                    android:maxLines="1"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/edittext_background"
+                    android:layout_alignBaseline="@id/startTextView"
+                    android:layout_toRightOf="@id/startTextView" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="To:"
+                    android:id="@+id/endTextView"
+                    android:padding="5dp"
+
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/start"
+                    android:layout_toRightOf="@id/startTextView"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_toEndOf="@id/endTextView"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/end"
+                    android:padding="5dp"
+                    android:inputType="number"
+                    android:background="@drawable/edittext_background"
+                    android:layout_centerVertical="true"
+                    android:minWidth="50dp"
+                    android:layout_alignBaseline="@id/startTextView"
+                    android:layout_toRightOf="@id/startTextView" />
+
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Ok"
+                android:background="@drawable/button_round"
+                android:layout_margin="5dp"
+                android:textAllCaps="false"
+
+                android:layout_gravity="end|center"
+
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content"
+                android:id="@+id/Ok"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+</LinearLayout>

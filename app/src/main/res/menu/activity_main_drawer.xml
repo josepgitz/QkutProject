@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_name"
+            android:icon="@drawable/ic_arrow_back_white_24dp"
+            android:title="Text to be seen by user"
+            android:visible="false"
+            app:showAsAction="always"
+            android:orderInCategory="0"/>
+        <item
+            android:id="@+id/nav_list_places"
+            android:icon="@drawable/ic_pin_drop_black_24dp"
+            android:title="Places" />
+        <item
+            android:id="@+id/my_account"
+            android:icon="@mipmap/ic_person"
+            android:title="My Account" />
+        <item
+            android:id="@+id/businessAccount"
+            android:icon="@drawable/ic_business_center_black_24dp"
+            android:title="Add Business Account" />
+        <item
+            android:id="@+id/qrscan"
+            android:visible="false"
+            android:icon="@mipmap/ic_qrcode"
+            android:title="Qr Scan" />
+        <item
+            android:id="@+id/reviewSchedules"
+            android:icon="@android:drawable/btn_star"
+            android:title="Review Schedules" />
+        <item
+            android:id="@+id/nav_account_logout"
+            android:icon="@mipmap/ic_person"
+            android:title="LogOut" />
+        <item
+            android:id="@+id/nav_camera"
+            android:visible="false"
+
+            android:icon="@android:drawable/btn_star"
+            android:title="Favourites" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:visible="false"
+
+            android:title="History" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:visible="false"
+
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_manage"
+            android:visible="false"
+
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+    </group>
+
+    <item android:title="Business"
+        android:visible="false"
+
+        >
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Serve" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="My Accounts" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,392 @@
+<resources>
+    <string name="app_name">qkut</string>
+    <string name="app_platform">android</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Hi Guest</string>
+    <string name="nav_header_subtitle">Welcome to qkut!</string>
+    <string name="nav_header_desc">Smart Queue App</string>
+    <string name="action_settings">Settings</string>
+    <string name="shared_preference_name">qkutvms_shared_preferences</string>
+    <string name="shared_preference_username_key">user_person_email</string>
+    <string name="shared_preference_fullname_key">person_email</string>
+    <string name="shared_preference_password_key">user_person_password</string>
+    <string name="shared_preference_auth_access_token_key">user_auth_access_token</string>
+    <string name="shared_preference_auth_token_type_key">user_auth_token_type</string>
+    <string name="shared_preference_auth_token_expires_at_key">expires_at</string>
+    <string name="shared_preference_user_qr_id">user_qr_id</string>
+    <string name="shared_preference_user_qrcode">user_qrcode</string>
+    <string name="shared_preference_remember_me_key">user_person_remember_me</string>
+    <string name="shared_preference_profile_picture_path">user_profile_picture_path</string>
+    <string name="underlined_text"><u>I\'m underlined</u></string>
+    <!-- Search -->
+    <string name="search_hint">Search for service or place</string>
+
+    <!--Menu links-->
+    <string name="menu_link_places">Places</string>
+    <string name="menu_link_queues">Queues</string>
+    <string name="menu_link_alerts">Alerts</string>
+
+    <!--Menu links account-->
+    <string name="menu_link_login">Login</string>
+    <string name="menu_link_register">Register</string>
+    <string name="menu_link_manage">Manage</string>
+
+    <!-- app links -->
+    <string name="app_base_link">http://qkut.co.ke</string>
+    <string name="api_getplaces_guest_link">api/listBusinesses</string>
+    <string name="api_getsectors_guest_link">api/listSectors</string>
+    <string name="api_getplaces_auth_link">api/auth/listBusinesses</string>
+    <string name="api_getsectors_auth_link">api/auth/listSectors</string>
+    <string name="url_server_check">api/serverCheck</string>
+    <string name="url_get_countries">api/getCountries</string>
+    <string name="url_get_flag">api/getcountryflag/</string>
+    <string name="url_user_login">api/auth/login</string>
+    <string name="url_user_logout">api/auth/logout</string>
+    <string name="url_user_details">api/auth/user</string>
+    <string name="url_profile_picture">api/auth/user/getProfilePhoto</string>
+    <string name="url_user_qr">api/auth/user/getQR</string>
+    <string name="url_user_queue">api/auth/user/queue</string>
+    <string name="url_user_visit">api/auth/user/visit</string>
+    <string name="url_service_info">api/auth/service/info</string>
+    <string name="url_account_get_verification_code">api/verification</string>
+    <string name="url_account_registration">api/register</string>
+
+    <!-- Registration -->
+    <string name="registration">Register</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="verification_prompt">Enter the Code you will receive by SMS</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_fullname">Full name</string>
+    <string name="prompt_mobile">Mobile</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_remember_me">Remember me</string>
+    <string name="action_sign_in">Sign</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_up">Sign Up</string>
+    <string name="action_logout">Logout</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="sign_up_label">Do not have an account yet?</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="title_location_permission">Qkut Location Request</string>
+    <string name="text_location_permission">Qkut need permission require permission quickly and accurately.Qkut may collect location data periodically  and use this data in anonymous way.This will help us server you better</string>
+    <string name="ok">ok</string>
+
+    <string-array name="CountryCodes">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antarctica</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Aruba</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bermuda</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Botswana</item>
+        <item>Bouvet Island</item>
+        <item>Brazil</item>
+        <item>British Indian Ocean Territory</item>
+        <item>British Virgin Islands</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Cape Verde</item>
+        <item>Cayman Islands</item>
+        <item>Central African Republic</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Christmas Island</item>
+        <item>Cocos (Keeling) Islands</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Congo</item>
+        <item>Cook Islands</item>
+        <item>Costa Rica</item>
+        <item>Cote d\'Ivoire</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Democratic Republic of the Congo</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>East Timor</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Faeroe Islands</item>
+        <item>Falkland Islands</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>Former Yugoslav Republic of Macedonia</item>
+        <item>France</item>
+        <item>French Guiana</item>
+        <item>French Polynesia</item>
+        <item>French Southern Territories</item>
+        <item>Gabon</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Greece</item>
+        <item>Greenland</item>
+        <item>Grenada</item>
+        <item>Guadeloupe</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Heard Island and McDonald Islands</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Laos</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macau</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Martinique</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mayotte</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Montserrat</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Myanmar</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>Netherlands Antilles</item>
+        <item>New Caledonia</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Niue</item>
+        <item>Norfolk Island</item>
+        <item>North Korea</item>
+        <item>Northern Marianas</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Pitcairn Islands</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>Qatar</item>
+        <item>Reunion</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+        <item>Sqo Tome and Principe</item>
+        <item>Saint Helena</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Pierre and Miquelon</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Georgia and the South Sandwich Islands</item>
+        <item>South Korea</item>
+        <item>South Sudan</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Svalbard and Jan Mayen</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syria</item>
+        <item>Taiwan</item>
+        <item>Tajikistan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>The Bahamas</item>
+        <item>The Gambia</item>
+        <item>Togo</item>
+        <item>Tokelau</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Turks and Caicos Islands</item>
+        <item>Tuvalu</item>
+        <item>Virgin Islands</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>United States Minor Outlying Islands</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Vatican City</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Wallis and Futuna</item>
+        <item>Western Sahara</item>
+        <item>Yemen</item>
+        <item>Yugoslavia</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+
+    <string-array name="Towns">
+        <item>Baragoi</item>
+        <item>Bungoma </item>
+        <item>Busia </item>
+        <item>Butere </item>
+        <item>Dadaab </item>
+        <item>Diani Beach </item>
+        <item>Eldoret </item>
+        <item>Emali </item>
+        <item>Embu </item>
+        <item>Garissa </item>
+        <item>Gede </item>
+        <item>Hola </item>
+        <item>Homa Bay </item>
+        <item>Isiolo </item>
+        <item>Kitui </item>
+        <item>Kibwezi </item>
+        <item>Makindu </item>
+        <item>Wote </item>
+        <item>Mutomo </item>
+        <item>Kajiado </item>
+        <item>Kakamega </item>
+        <item>Kakuma </item>
+        <item>Kapenguria </item>
+        <item>Kericho </item>
+        <item>Keroka </item>
+        <item>Kiambu </item>
+        <item>Kilifi </item>
+        <item>Kisii </item>
+        <item>Kisumu </item>
+        <item>Kitale </item>
+        <item>Lamu </item>
+        <item>Langata </item>
+        <item>Litein </item>
+        <item>Lodwar </item>
+        <item>Lokichoggio </item>
+        <item>Londiani </item>
+        <item>Loyangalani </item>
+        <item>Machakos </item>
+        <item>Malindi </item>
+        <item>Mandera </item>
+        <item>Maralal </item>
+        <item>Marsabit </item>
+        <item>Meru </item>
+        <item>Mombasa </item>
+        <item>Moyale </item>
+        <item>Mumias </item>
+        <item>Muranga </item>
+        <item>Nairobi </item>
+        <item>Naivasha </item>
+        <item>Nakuru </item>
+        <item>Namanga </item>
+        <item>Nanyuki </item>
+        <item>Naro Moru </item>
+        <item>Narok </item>
+        <item>Nyahururu </item>
+        <item>Nyeri </item>
+        <item>Ruiru </item>
+        <item>Shimoni </item>
+        <item>Takaungu </item>
+        <item>Thika </item>
+        <item>Vihiga </item>
+        <item>Voi </item>
+        <item>Wajir </item>
+        <item>Watamu </item>
+        <item>Webuye </item>
+        <item>Wundanyi </item>
+    </string-array>
+</resources>

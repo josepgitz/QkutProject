@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/cointainer"
+        android:layout_margin="5dp"
+       android:background="#dad5f7"
+        android:layout_height="wrap_content">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_weight="10"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/company_alert_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:text="Service Name"
+        android:textColor="@color/colorGrey"/>
+
+
+
+    <TextView
+        android:id="@+id/alert_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert Message"
+        android:textSize="14dp"
+        android:textColor="@color/colorGrey"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/alert_time"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:text="Department"
+            android:textSize="@dimen/text_size_small"
+
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/alert_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="Alert Date"
+            android:maxLines="5"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+</LinearLayout>
+    <Button
+        android:id="@+id/more_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:layout_weight="2"
+      android:layout_marginRight="10dp"
+        android:text="REVIEW"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_queue_play_next_white_24dp"
+        android:textStyle="bold" />
+</LinearLayout>
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="30dp"
+            android:src="@drawable/new_notification"
+            android:id="@+id/image_new"
+            android:visibility="gone"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:id="@+id/moreItemAlert"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Department Id:"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Description"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Clinical"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

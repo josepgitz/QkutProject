@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scheduled Visits And Queues"
+        android:layout_marginTop="@dimen/activity_vertical_margin_small"
+        android:paddingLeft="16dp"
+        android:textSize="16dp"
+        android:textColor="@color/button_focused"/>
+    <ListView
+        android:id="@+id/scheduled_business_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>

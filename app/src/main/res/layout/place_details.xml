@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:paddingHorizontal="@dimen/activity_horizontal_margin_small"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/business_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Business description"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/colorGrey"/>
+
+    <TextView
+        android:id="@+id/business_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Business description"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/colorGrey"/>
+
+    <TextView
+        android:id="@+id/business_sector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/colorGrey"/>
+
+    <TextView
+        android:id="@+id/business_industry_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/colorGrey"/>
+
+    <TextView
+        android:id="@+id/business_industry2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/colorGrey"/>
+
+    <TextView
+        android:id="@+id/business_sub_industry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/colorGrey"/>
+
+    <TextView
+        android:id="@+id/business_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/colorGrey"/>
+
+
+    <TextView
+        android:id="@+id/business_town"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/colorGrey"/>
+
+    <TextView
+        android:id="@+id/business_building"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/colorGrey"/>
+
+</LinearLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_weight="9"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+    <ImageView
+        android:id="@+id/nav_profile_photo1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/nav_header_desc"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/loading"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/progress_indicator_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:text="Generating Code"
+            android:textColor="@color/colorGrey" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/progress_indicator_icon"
+            android:visibility="gone"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@color/colorAccent"
+            android:src="@android:drawable/stat_sys_warning"/>
+
+        <ProgressBar
+            android:id="@+id/progress_indicator"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:textAlignment="gravity"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:fadingEdge="horizontal"
+        app:cardCornerRadius="@dimen/activity_vertical_margin_small_small"
+        android:padding="10dp"
+        android:layout_margin="25dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:gravity="start"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:id="@+id/profile_nameICON"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:padding="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/profile_name"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@null"
+                        android:padding="10dp"
+                        android:text="Profile Name"
+                        android:textColor="@color/colorGrey" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/editusername"
+                        android:background="@drawable/ic_edit_black_24dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+             <!--Account Type Editting-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginEnd="40dp"
+                    android:layout_weight="1"                        android:id="@+id/AccountTypeicon"
+                    android:drawableLeft="@drawable/ic_account_balance_black_24dp"
+                    android:padding="10dp"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/AccountType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="50dp"
+                        android:background="@null"
+                        android:textColor="@color/colorGrey"
+                        android:padding="10dp"
+                        android:text="Personal account" />
+
+                    <TextView
+                        android:id="@+id/editaccounttype"
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_edit_black_24dp" />
+                </LinearLayout>
+
+                <!--Account Type Editting-->
+                <!--End of Editting pro-->
+
+                <!--Start of Editting telephone Number-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginEnd="40dp"
+                    android:layout_weight="1"
+                    android:id="@+id/MobileNoicon"
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"
+                    android:padding="10dp"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/MobileNo"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@null"
+                        android:padding="10dp"
+                        android:text="Mobile Number"
+                        android:textColor="@color/colorGrey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/editmobile"
+                        android:background="@drawable/ic_edit_black_24dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!--End of Editting telephone Number-->
+                 <!--Start Editting Email -->
+
+                <!--Account Type Editting-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginEnd="40dp"
+                    android:layout_weight="1"
+                    android:id="@+id/emailIcon"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:padding="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/EmailNo"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="50dp"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:editable="false"
+                        android:inputType="none"
+                        android:padding="10dp"
+                        android:text="Email"
+                        tools:ignore="Deprecated" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/editemail"
+                        android:background="@drawable/ic_edit_black_24dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:visibility="gone"
+                        android:background="@color/colorPrimary"
+                        android:text="SAVE"
+                        android:textColor="@color/colorWhite" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>

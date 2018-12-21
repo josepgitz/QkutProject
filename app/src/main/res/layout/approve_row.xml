@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorBlack"
+        android:layout_height="2dp"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:fadingEdge="horizontal"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="#f7e6f7"
+
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="No:"
+                android:layout_toLeftOf="@+id/number"
+                android:textSize="21sp"
+                android:textColor="@color/colorPrimary"
+
+                android:layout_alignBaseline="@id/number"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="7"
+                android:textSize="21sp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:id="@+id/number"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:text="Name:"
+          android:textColor="@color/colorBlack"
+          android:layout_marginRight="5dp"
+          android:id="@+id/nameTextView"
+          android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="At:"
+                android:textColor="@color/colorBlack"
+
+                android:layout_below="@id/serviceTextView"
+                android:id="@+id/timeTextView"
+                android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/name"
+        android:typeface="serif"
+        android:textColor="@color/colorGrey"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_toEndOf="@+id/nameTextView"
+        android:text="Business"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/nameTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/time"
+        android:text="18:40pm"
+        android:textColor="@color/colorGrey"
+        android:typeface="serif"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignStart="@id/name"
+        android:layout_toEndOf="@id/timeTextView"
+        android:layout_alignBaseline="@id/timeTextView"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/timeTextView"
+        android:layout_alignLeft="@id/name" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Business:"
+                android:textColor="@color/colorBlack"
+                android:layout_marginRight="5dp"
+                android:id="@+id/nameBusiness"
+                android:layout_below="@+id/name"
+                android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/Company"
+        android:text="Company Name"
+        android:layout_toEndOf="@+id/nameBusiness"
+        android:textColor="@color/colorGrey"
+        android:layout_below="@id/name"
+
+        android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Service:"
+                android:textColor="@color/colorBlack"
+                android:layout_marginRight="5dp"
+                android:id="@+id/ServiceName"
+                android:layout_below="@+id/nameBusiness"
+                android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/serviceTextView"
+        android:text="Service:"
+        android:layout_toEndOf="@+id/ServiceName"
+        android:layout_below="@id/Company"
+        android:textColor="@color/colorGrey"
+
+        android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Approve"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/approved"
+                android:background="@color/colorPrimarDark"
+                android:textAllCaps="false"
+                android:layout_below="@id/timeTextView"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Reject"
+                android:textColor="@color/colorWhite"
+
+                android:layout_margin="5dp"
+                android:id="@+id/reject"
+                android:layout_alignParentEnd="true"
+                android:background="@color/colorPrimarDark"
+                android:textAllCaps="false"
+                android:layout_below="@id/timeTextView"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/reject"
+                android:id="@+id/rejectLayout"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Tell david why he was disapproved"
+                android:textColor="@color/colorGrey"
+                android:textColorHint="@color/colorBlack"
+                android:layout_margin="5dp"
+                android:gravity="start"
+                android:padding="3dp"
+                android:typeface="serif"
+                android:fontFamily="sans-serif-condensed"
+                android:minHeight="100dp"
+                android:background="@drawable/edittext_background"
+                android:id="@+id/reasonEditText"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:text="Remember reason?"
+                android:checked="true"
+                android:ellipsize="end"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorBlack"
+
+                android:shadowColor="@color/colorPrimary"
+                android:layout_below="@id/reasonEditText"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_width="wrap_content"
+                android:text="Ok"
+                android:layout_margin="5dp"
+                android:id="@+id/Ok"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentEnd="true"
+                android:background="@color/colorPrimarDark"
+                android:textAllCaps="false"
+                android:layout_below="@id/reasonEditText"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

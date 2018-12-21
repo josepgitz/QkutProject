@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_location_permission">Qkut Location Request</string>
+    <string name="text_location_permission">Qkut need permission require permission quickly and accurately.Qkut may collect location data periodically  and use this data in anonymous way.This will help us server you better</string>
+</resources>

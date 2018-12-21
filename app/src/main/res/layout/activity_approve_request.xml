@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#f7e6f7"
+    tools:context=".views.activities.ApproveRequest">
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:text="You Dont Have any request At The Moment"
+        android:layout_centerVertical="true"
+        android:id="@+id/showWhenNothing"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:id="@+id/loadingScheduledBusiness"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Loading ..."
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+<ListView
+    android:layout_width="match_parent"
+    android:id="@+id/listOfRequest"
+    android:layout_weight="3"
+    android:layout_height="match_parent"/>
+</LinearLayout>
